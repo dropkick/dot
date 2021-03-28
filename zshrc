@@ -9,7 +9,7 @@ echo 'Hello from .zshrc'
 
 # Create Aliases
 
-alias lls='ls -lAhF'
+alias lls='ls -lAFh'
 
 
 # Customize Prompt(s)
