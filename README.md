@@ -1,6 +1,7 @@
 # dot <!-- omit in toc -->
 
 > My macOS configuration. Refactored based in zsh. There are a few paths tucked away in scripts that you'll need to be changed if you want to use these yourself. 
+
 [![Open Issues](https://badgen.net/github/open-issues/dropkick/dot)](https://github.com/dropkick/dot/issues)
 [![License](https://badgen.net/github/license/dropkick/dot)](LICENSE)
 
