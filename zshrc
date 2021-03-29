@@ -5,7 +5,7 @@ echo 'Hello from .zshrc'
 
 # Syntax highlighting for man pages using bat
 # (set bat as a colorizing pager for man, by setting the MANPAGER variable)
-export MANPAGER="sh -c 'col -bx | bat -l man -p'"
+# export MANPAGER="sh -c 'col -bx | bat -l man -p'" # replaced with batman command in bat-extras
 
 # Sidestep macOS Gatekeeper for cask installs 
 export HOMEBREW_CASK_OPTS="--no-quarantine"
@@ -19,6 +19,8 @@ export HOMEBREW_CASK_OPTS="--no-quarantine"
 # alias lls='ls -lAFh'
 alias ls='exa -laFh --git'
 alias exa='exa -laFh --git'
+
+alias man='batman' # replace standard man pager with batman in bat-extras
 
 # Customize Prompt(s)
 PROMPT='

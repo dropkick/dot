@@ -1,3 +1,4 @@
+tap "eth-p/software"
 tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/cask-drivers"
@@ -101,6 +102,8 @@ brew "zsh-autosuggestions"
 brew "zsh-history-substring-search"
 # Fish shell like syntax highlighting for zsh
 brew "zsh-syntax-highlighting"
+# Bash scripts that integrate bat with various command-line tools
+brew "eth-p/software/bat-extras"
 # Theme Kit is a tool kit for manipulating shopify themes
 brew "shopify/shopify/themekit"
 # Password manager that keeps all passwords secure behind one password
@@ -125,8 +128,6 @@ cask "betterzip"
 cask "brave-browser"
 # Synchronization and backup tool
 cask "chronosync"
-# Tool to remove unnecessary files and folders from disk
-cask "cleanmymac"
 # Clipboard extension app
 cask "clipy"
 # App for building websites
