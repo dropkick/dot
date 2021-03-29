@@ -3,6 +3,10 @@ echo 'Hello from .zshrc'
 
 # Set Variables
 
+# Syntax highlighting for man pages using bat
+# (set bat as a colorizing pager for man, by setting the MANPAGER variable)
+export MANPAGER="sh -c 'col -bx | bat -l man -p'"
+
 
 # Change ZSH Options
 
