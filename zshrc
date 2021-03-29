@@ -7,6 +7,9 @@ echo 'Hello from .zshrc'
 # (set bat as a colorizing pager for man, by setting the MANPAGER variable)
 export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 
+# Sidestep macOS Gatekeeper for cask installs 
+export HOMEBREW_CASK_OPTS="--no-quarantine"
+
 
 # Change ZSH Options
 
