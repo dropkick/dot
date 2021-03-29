@@ -5,18 +5,19 @@
 - clean: ['~']
 
 - link:
-#   ~/.tmux.conf: tmux.conf
    ~/.config/gh: config/gh
    ~/.config/git: config/git
-   ~/.config/lsd: config/lsd
    ~/.config/hammerspoon: config/hammerspoon
+   ~/.config/lsd: config/lsd
+   ~/.config/neofetch: config/neofetch
+   ~/.config/prettier: config/prettier
    ~/.zshrc: zshrc
 
 - create:
     - ~/Fonts
     - ~/Video
     - ~/repos
-#    - ~/hey/you/guys
 
-# - shell:
+#- shell:
+#    - .
 #   - [git submodule update --init --recursive, Installing submodules]
