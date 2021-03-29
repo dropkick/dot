@@ -5,6 +5,8 @@
 - clean: ['~']
 
 - link:
+   ~/.zshenv: zshenv
+   ~/.zshrc: zshrc
    ~/.config/bat: config/bat
    ~/.config/gh: config/gh
    ~/.config/git: config/git
@@ -12,7 +14,6 @@
    ~/.config/lsd: config/lsd
    ~/.config/neofetch: config/neofetch
    ~/.config/prettier: config/prettier
-   ~/.zshrc: zshrc
 
 - create:
     - ~/Downloads/download\ limbo
