@@ -5,6 +5,7 @@
 - clean: ['~']
 
 - link:
+   ~/.config/bat: config/bat
    ~/.config/gh: config/gh
    ~/.config/git: config/git
    ~/.config/hammerspoon: config/hammerspoon
