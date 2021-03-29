@@ -6,7 +6,10 @@
 
 - link:
 #   ~/.tmux.conf: tmux.conf
+   ~/.config/gh: config/gh
    ~/.config/git: config/git
+   ~/.config/lsd: config/lsd
+   ~/.config/hammerspoon: config/hammerspoon
    ~/.zshrc: zshrc
 
 - create:
