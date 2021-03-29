@@ -14,9 +14,13 @@
    ~/.zshrc: zshrc
 
 - create:
+    - ~/Downloads/download\ limbo
+    - ~/Desktop/cleared\ files
     - ~/Fonts
-    - ~/Video
+    - ~/Pictures/screenshots
+    - ~/Projects
     - ~/repos
+    - ~/Video
 
 #- shell:
 #    - .
