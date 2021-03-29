@@ -1,4 +1,3 @@
-# Taps
 tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/cask-drivers"
@@ -6,8 +5,6 @@ tap "homebrew/cask-fonts"
 tap "homebrew/cask-versions"
 tap "homebrew/core"
 tap "shopify/shopify"
-
-# Brews (packages)
 brew "bash"
 brew "bash-completion@2"
 brew "bat"
@@ -57,8 +54,6 @@ brew "zsh-autosuggestions"
 brew "zsh-history-substring-search"
 brew "zsh-syntax-highlighting"
 brew "shopify/shopify/themekit"
-
-# Casks (applications)
 cask "1password"
 cask "adobe-creative-cloud"
 cask "appzapper"
@@ -89,6 +84,7 @@ cask "font-fira-code"
 cask "font-hack-nerd-font"
 cask "garagebuy"
 cask "garagesale"
+cask "gitkraken"
 cask "google-backup-and-sync"
 cask "google-chrome"
 cask "google-chrome-canary"
@@ -130,6 +126,8 @@ cask "omniplan"
 cask "opera"
 cask "opera-developer"
 cask "permute"
+cask "popclip"
+cask "printopia"
 cask "qlcolorcode"
 cask "qlimagesize"
 cask "qlmarkdown"
@@ -165,8 +163,6 @@ cask "webstorm"
 cask "whatsize"
 cask "xquartz"
 cask "zoomus"
-
-# Mac App Store applications
 mas "Amphetamine", id: 937984704
 mas "Chronicle Pro", id: 1280542517
 mas "ColorSnapper2", id: 969418666
