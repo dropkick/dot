@@ -2,12 +2,16 @@
 
 > My macOS configuration. Refactored based in zsh. There are a few paths tucked away in scripts that you'll need to be changed if you want to use these yourself. 
 
+Loads of groundwork built from Patrick McDonald’s [Dotfiles form start to finish-ish](http://dotfiles.eieio.xyz) course
+
 [![Open Issues](https://badgen.net/github/open-issues/dropkick/dot)](https://github.com/dropkick/dot/issues)
 [![License](https://badgen.net/github/license/dropkick/dot)](LICENSE)
 
+
+
 <!-- TABLE OF CONTENTS -->
 ## Table of Contents <!-- omit in toc -->
-
+<!-- 
 * [About The Project](#about-the-project)
   * [Directory structure](#directory-structure)
   * [Scripts](#scripts)
@@ -20,4 +24,4 @@
 * [Usage](#usage)
 * [Manual Changes](#manual-changes)
 * [Work Related Manual Changes](#work-related-manual-changes)
-* [License](#license)
+* [License](#license) -->
