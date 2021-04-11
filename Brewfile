@@ -14,6 +14,8 @@ brew "bash-completion@2"
 brew "bat"
 # TAP-compliant test framework for Bash scripts
 brew "bats"
+# Change macOS display brightness from the command-line
+brew "brightness"
 # Perl compatible regular expressions library
 brew "pcre"
 # GNU File, Shell, and Text utilities
@@ -234,6 +236,7 @@ cask "omnioutliner"
 cask "omniplan"
 # Web browser
 cask "opera"
+# Web browser
 cask "opera-developer"
 # Converts and edits video, audio or image files
 cask "permute"
@@ -250,6 +253,8 @@ cask "qlmarkdown"
 cask "qlstephen"
 cask "qlvideo"
 cask "quicklook-json"
+# Digital audio production application
+cask "reaper"
 # Batch file renamer application
 cask "renamer"
 # File sync and share software
