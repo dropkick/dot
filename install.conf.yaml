@@ -26,7 +26,7 @@
 
 - shell:
     -
-      command: ./setup_homebrew.zsh
+      command: ./setup.zsh
       stdout: true
       stderr: true
       
