@@ -23,6 +23,8 @@ export HOMEBREW_CASK_OPTS="--no-quarantine"
 # alias man='batman' # replace standard man pager with batman in bat-extras
 
 source $HOME/.dot/config/zsh/alias.zsh
+source $HOME/.dot/config/zsh/alias.macos.zsh
+
 
 # Customize Prompt(s)
 # PROMPT='
@@ -58,6 +60,19 @@ PROMPT='%(?.%F{green}√.%F{red}?%?)%f %F{245}%n%f%F{240}@%f%F{245}%m%f %B%F{39}
 # Initialize zsh-autosuggestions
 # source #{HOMEBREW_PREFIX}/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+
+# Initialize zsh-syntax-highlighting (must come before search)
+source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+# Initialize zsh-history-substring-search
+source /usr/local/share/zsh-history-substring-search/zsh-history-substring-search.zsh
+
+bindkey '^[[A' history-substring-search-up
+bindkey '^[[B' history-substring-search-down
+
+
+
+# configure zsh-autosuggestions
 
 # Add Locations to $PATH  Variable
 
