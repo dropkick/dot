@@ -327,10 +327,9 @@ mas "Paletter", id: 1494948845
 mas "Paprika Recipe Manager 3", id: 1303222628
 mas "PDFScanner", id: 410968114
 mas "Pommie", id: 963504129
-mas "Reeder", id: 1449412482
 mas "Reeder", id: 1529448980
 mas "Session", id: 1521432881
 mas "Silicio", id: 933627574
 mas "SonicWall Mobile Connect", id: 822514576
 mas "Tweetbot", id: 1384080005
-mas "UpHabit ", id: 1495261277
+mas "UpHabit", id: 1495261277
