@@ -77,7 +77,8 @@ alias killos="killfinder && killdock && killmenubar"
 
 alias chromekill="ps ux | grep '[C]hrome Helper --type=renderer' | grep -v extension-process | tr -s ' ' | cut -d ' ' -f2 | xargs kill"
 
-alias update="dotfiles update"
+# alias update="dotfiles update"
+# MOVED TO A FUNCTION in functions.zsh
 
 # Set vtop to always use monokai theme
 alias vtop="vtop --theme monokai"

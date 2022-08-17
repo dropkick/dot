@@ -1,4 +1,5 @@
 tap "eth-p/software"
+tap "goles/battery"
 tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/cask-drivers"
@@ -14,12 +15,18 @@ brew "bash-completion@2"
 brew "bat"
 # TAP-compliant test framework for Bash scripts
 brew "bats"
+# GNU File, Shell, and Text utilities
+brew "coreutils"
+# Bash Automated Testing System
+brew "bats-core", link: false
 # Change macOS display brightness from the command-line
 brew "brightness"
 # Perl compatible regular expressions library
 brew "pcre"
-# GNU File, Shell, and Text utilities
-brew "coreutils"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.9"
+# Dependency Manager for PHP
+brew "composer"
 # Configurable talking characters in ASCII art
 brew "cowsay"
 # Good-lookin' diffs with diff-highlight and more
@@ -32,6 +39,8 @@ brew "exa"
 brew "fasd"
 # Generate introspection data for GObject libraries
 brew "gobject-introspection"
+# OpenType text shaping engine
+brew "harfbuzz"
 # Play, record, convert, and stream audio and video
 brew "ffmpeg"
 # Command-line fuzzy finder written in Go
@@ -44,12 +53,16 @@ brew "git"
 brew "git-extras"
 # GNU implementation of the famous stream editor
 brew "gnu-sed"
+# Open source programming language to build simple/reliable/efficient software
+brew "go"
 # GNU grep, egrep and fgrep
 brew "grep"
 # GitHub Markdown previewer
 brew "grip"
 # User-friendly cURL replacement (command-line HTTP client)
 brew "httpie"
+# ISO/IEC 23008-12:2017 HEIF file format decoder and encoder
+brew "libheif"
 # Tools and libraries to manipulate images in many formats
 brew "imagemagick"
 # Lightweight and flexible command-line JSON processor
@@ -62,10 +75,8 @@ brew "lynx"
 brew "mackup"
 # Mac App Store command-line interface
 brew "mas"
-# UNIX movie player
-brew "mplayer"
-# Download YouTube videos from the command-line
-brew "youtube-dl"
+# Video processing framework with simplicity in mind
+brew "vapoursynth"
 # Media player based on MPlayer and mplayer2
 brew "mpv"
 # Free (GNU) replacement for the Pico text editor
@@ -83,15 +94,19 @@ brew "psgrep"
 # Monitor data's progress through a pipe
 brew "pv"
 # Interpreted, interactive, object-oriented programming language
-brew "python@2", link: false
+brew "python@3.8"
 # Powerful, clean, object-oriented scripting language
 brew "ruby"
 # Static analysis and lint tool, for (ba)sh scripts
 brew "shellcheck"
+# Tool to create intelligent and beautiful documentation
+brew "sphinx-doc"
 # Add a public key to a remote machine's authorized_keys file
-brew "ssh-copy-id", link: true
+brew "ssh-copy-id"
 # Organize software neatly under a single directory tree (e.g. /usr/local)
 brew "stow"
+# Programmatically correct mistyped console commands
+brew "thefuck"
 # Color-based alternative to figlet (uses libcaca)
 brew "toilet"
 # Display directories as trees (with optional color/HTML output)
@@ -106,16 +121,15 @@ brew "zsh-history-substring-search"
 brew "zsh-syntax-highlighting"
 # Bash scripts that integrate bat with various command-line tools
 brew "eth-p/software/bat-extras"
+brew "goles/battery/battery"
 # Theme Kit is a tool kit for manipulating shopify themes
 brew "shopify/shopify/themekit"
-# Password manager that keeps all passwords secure behind one password
-cask "1password"
 # Collection of apps and services for photography, design, video, web, and UX
 cask "adobe-creative-cloud"
+# Sends audio from computer to outputs
+cask "airfoil"
 # Tool to uninstall unwanted applications and their support files
 cask "appzapper"
-# Multi-cloud backup application
-cask "arq"
 # Records audio from any application
 cask "audio-hijack"
 # Data backup and storage service
@@ -134,7 +148,8 @@ cask "chronosync"
 cask "clipy"
 # App for building websites
 cask "codekit"
-cask "colloquy"
+# Color picking application
+cask "colorsnapper"
 # API documentation browser and code snippet manager
 cask "dash"
 # Utility to enhance the Open and Save dialogs in applications
@@ -156,14 +171,22 @@ cask "expandrive"
 # Web browser
 cask "firefox"
 # Web browser
+cask "firefox-developer-edition"
+# Web browser
 cask "firefox-nightly"
 cask "font-fira-code"
+cask "font-hack"
 cask "font-hack-nerd-font"
+cask "font-inconsolata"
+cask "font-national-park"
+# Elegant sans-serif font family, now 9 weights and italic style
+cask "font-raleway"
 # App to assist with finding, tracking, and purchasing items on eBay
 cask "garagebuy"
 cask "garagesale"
 # Git client focusing on productivity
 cask "gitkraken"
+# Back up and sync files with Google Drive
 cask "google-backup-and-sync"
 # Web browser
 cask "google-chrome"
@@ -177,7 +200,6 @@ cask "gpg-suite"
 cask "gqrx"
 # Desktop automation application
 cask "hammerspoon"
-cask "hand-mirror"
 # Time tracking application
 cask "harvest"
 # Automated organization
@@ -211,6 +233,8 @@ cask "launchbar"
 cask "livereload"
 # Cable-free audio router
 cask "loopback"
+# Clipboard manager
+cask "maccy"
 # Open-source Markdown editor
 cask "macdown"
 # IMAP email client
@@ -240,8 +264,8 @@ cask "opera"
 cask "opera-developer"
 # Converts and edits video, audio or image files
 cask "permute"
-# Used to access context-specific actions when text is selected
-cask "popclip"
+# Collaboration platform for API development
+cask "postman"
 # Wireless printing to any printer
 cask "printopia"
 # QuickLook plug-in that renders source code with syntax highlighting
@@ -253,6 +277,7 @@ cask "qlmarkdown"
 cask "qlstephen"
 cask "qlvideo"
 cask "quicklook-json"
+cask "quicklookase"
 # Digital audio production application
 cask "reaper"
 # Batch file renamer application
@@ -271,11 +296,14 @@ cask "sequel-pro"
 cask "signal"
 # Digital design and prototyping platform
 cask "sketch"
+# 3D design software
 cask "sketchup"
 # Video chat, voice call and instant messaging application
 cask "skype"
 # Team communication and collaboration software
 cask "slack"
+# Sound and audio controller
+cask "soundsource"
 # Graphical client for Git version control
 cask "sourcetree"
 # Text editor for code, markup and prose
@@ -302,24 +330,29 @@ cask "transmit"
 cask "visual-studio-code"
 # Multimedia player
 cask "vlc"
+cask "webpquicklook"
 # JavaScript IDE
 cask "webstorm"
 # File system utility used to view and reclaim disk space
 cask "whatsize"
 # Open-source version of the X.Org X Window System
 cask "xquartz"
-# Temporary makeshift alias for the video communication tool Zoom
-cask "zoomus"
+# Video communication and virtual meeting platform
+cask "zoom"
 mas "Amphetamine", id: 937984704
 mas "Chronicle Pro", id: 1280542517
-mas "ColorSnapper2", id: 969418666
 mas "Day One", id: 1055511498
+mas "Deliveries", id: 290986013
 mas "Deliveries", id: 924726344
 mas "Drafts", id: 1435957248
 mas "EchoHam", id: 873302145
 mas "Exporter for Contacts", id: 402323447
 mas "Fantastical", id: 975937182
+mas "GarageBand", id: 682658836
+mas "GarageBuy", id: 402415186
+mas "Hand Mirror", id: 1502839586
 mas "Harvest", id: 506189836
+mas "iMovie", id: 408981434
 mas "Keynote", id: 409183694
 mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
@@ -328,8 +361,11 @@ mas "Paprika Recipe Manager 3", id: 1303222628
 mas "PDFScanner", id: 410968114
 mas "Pommie", id: 963504129
 mas "Reeder", id: 1529448980
+mas "Reeder", id: 1449412482
 mas "Session", id: 1521432881
 mas "Silicio", id: 933627574
+mas "SiteSucker", id: 442168834
 mas "SonicWall Mobile Connect", id: 822514576
 mas "Tweetbot", id: 1384080005
 mas "UpHabit", id: 1495261277
+mas "Xcode", id: 497799835

@@ -25,6 +25,10 @@
     - ~/Video
 
 - shell:
+    - 
+      command: chmod -R +x ./scripts/setup && chmod +x ./setup.zsh
+      stdout: true
+      stderr: true
     -
       command: ./setup.zsh
       stdout: true

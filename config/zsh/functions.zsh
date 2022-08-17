@@ -15,6 +15,37 @@ function copyfile {
   clipcopy $1
 }
 
+# Log Helper
+info() { echo -e "\033[1m[INFO]\033[0m $1" ; }
+ok()   { echo -e "\033[32m[OK]\033[0m $1" ; }
+
+function updates {
+  ok "🚦 Let’s update all the things..."
+  info "[1/7] 🍎 Starting macOS cli software update..."
+  sudo softwareupdate -i -a
+  ok "macOS cli softwareupdate complete"
+  info "[2/7] 🍺 Starting homebrew update..."
+  brew update
+  ok "🍺 homebrew update complete"
+  info "[3/7] 🍺 Starting homebrew upgrade..."
+  brew upgrade
+  ok "🍺 homebrew upgrade complete"
+  # npm install npm -g
+  info "[4/7] 🚦 Starting global node package update (npm update -g)..."
+  npm update -g
+  ok "✔ global node package update complete..."
+  info "[5/7] 🚦 Starting system ruby gem updates..."
+  gem update --system
+  ok "✔ system ruby gem updates complete..."
+  info "[6/7] 🚦 Starting gem update..."
+  gem update
+  ok "✔ ruby gem update complete..."
+  info "[7/7] 🚦 Starting Mac App Store updates (mas)..."
+  mas upgrade  
+  ok "✔ Mac App Store updates complete..."
+  ok "💥 all the things have been updated..."
+}
+
 # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/vscode
 # VS Code (stable / insiders) / VSCodium zsh plugin
 # Authors:
@@ -62,3 +93,45 @@ alias vscde="$VSCODE --disable-extensions"
 # httpie: add alias for http
 
 alias https='http --default-scheme=https'
+
+
+# Functions: network
+
+# Webserver
+
+
+srv() {
+  local DIR=${1:-.}
+#  local AVAILABLE_PORT=$(get-port)
+#  local PORT=${2:-$AVAILABLE_PORT}
+#  if [ "$PORT" -le "1024" ]; then
+#    sudo -v
+#  fi
+  local PORT="3474"
+  superstatic --host localhost --port "$PORT"
+  open "http://localhost:3474"
+  # superstatic ./ -p "$PORT"
+}
+
+# Get IP from hostname
+
+hostname2ip() {
+  ping -c 1 "$1" | egrep -m1 -o '[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}'
+}
+
+# Upload file to transfer.sh
+# https://github.com/dutchcoders/transfer.sh/
+
+transfer() {
+  tmpfile=$( mktemp -t transferXXX )
+  curl --progress-bar --upload-file "$1" https://transfer.sh/$(basename $1) >> $tmpfile;
+  cat $tmpfile;
+  rm -f $tmpfile;
+}
+
+# Find real from shortened url
+
+unshorten() {
+  curl -sIL $1 | sed -n 's/Location: *//p'
+}
+

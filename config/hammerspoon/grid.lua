@@ -35,3 +35,11 @@ hs.hotkey.bind(mash, "space", function() hs.grid.maximizeWindow() end)
 
 --- .: minimize window
 hs.hotkey.bind(mash, ".", function() hs.grid.set(getWin(), '0,0 1x1'); end)
+
+--- .: window left 3x5
+hs.hotkey.bind(mash, ",", function() hs.grid.set(getWin(), '0,0 3x5'); end)
+
+--- .: window right 2x5
+hs.hotkey.bind(mash, "/", function() hs.grid.set(getWin(), '3, 2x5'); end)
+
+

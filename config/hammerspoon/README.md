@@ -17,7 +17,7 @@ C | Google Chrome
 S | Safari
 D | Dash
 F | Finder
-G | Tower (Git)
+G | GitKraken (Git)
 H | Harvest
 M | MailMate
 P | System Preferences
