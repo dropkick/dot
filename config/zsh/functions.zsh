@@ -31,8 +31,8 @@ function updates {
   brew upgrade
   ok "🍺 homebrew upgrade complete"
   # npm install npm -g
-  info "[4/7] 🚦 Starting global node package update (npm update -g)..."
-  npm update -g
+  info "[4/7] 🚦 Starting global node package update (npm update -g --loglevel=error)..."
+  npm update -g --loglevel=error
   ok "✔ global node package update complete..."
   info "[5/7] 🚦 Starting system ruby gem updates..."
   gem update --system

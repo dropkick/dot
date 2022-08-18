@@ -60,16 +60,16 @@ PROMPT='%(?.%F{green}√.%F{red}?%?)%f %F{245}%n%f%F{240}@%f%F{245}%m%f %B%F{39}
 
 # Initialize zsh-autosuggestions
 # source #{HOMEBREW_PREFIX}/share/zsh-autosuggestions/zsh-autosuggestions.zsh
-# source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
-source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+# source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # Initialize zsh-syntax-highlighting (must come before search)
-# source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+# source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # Initialize zsh-history-substring-search
-# source /usr/local/share/zsh-history-substring-search/zsh-history-substring-search.zsh
-source /opt/homebrew/share/zsh-history-substring-search/zsh-history-substring-search.zsh
+source /usr/local/share/zsh-history-substring-search/zsh-history-substring-search.zsh
+# source /opt/homebrew/share/zsh-history-substring-search/zsh-history-substring-search.zsh
 
 
 
@@ -106,7 +106,9 @@ function update {
 
 
 export PATH="/usr/local/opt/ruby/bin:/usr/local/lib/ruby/gems/3.0.2_1/bin:$PATH"
-source /opt/homebrew/opt/chruby/share/chruby/chruby.sh
-source /opt/homebrew/opt/chruby/share/chruby/auto.sh
+source /usr/local/share/chruby/chruby.sh
+# source /opt/homebrew/opt/chruby/share/chruby/chruby.sh
+source /usr/local/share/chruby/auto.sh
+# source /opt/homebrew/opt/chruby/share/chruby/auto.sh
 chruby ruby-2.7.4
 chruby ruby-2.7.4
